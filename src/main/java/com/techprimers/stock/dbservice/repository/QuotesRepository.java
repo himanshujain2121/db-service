@@ -11,5 +11,7 @@ import com.techprimers.stock.dbservice.model.Quote;
 public interface QuotesRepository extends JpaRepository <Quote, Integer> {
 
 	List<Quote> findByUsername(String username);
+	
+	boolean deleteByUsername(String username);
 
 }
